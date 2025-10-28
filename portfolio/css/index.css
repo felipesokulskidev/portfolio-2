@@ -1,0 +1,399 @@
+:root{
+    --background-color:  rgb(1, 0, 48);
+    --white: rgb(255, 255, 255);
+    --orange: rgb(255, 165, 0);
+    --grey: rgb(121, 121, 121);
+}
+
+body{
+    width: 100%; /* conteúdo máximo */
+    margin: 0 auto;
+    background-color: var(--background-color);
+}
+
+.cabecalho{
+    width: 100%;
+    height: 150px;
+}
+
+/*HEADER CIMA*/
+
+.header-cima{
+    margin-top: 60px;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.felipe{
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 50px;
+    font-weight:500;
+    color: var(--orange);
+    /*background: linear-gradient(to right, orange, rgb(248, 207, 129));
+    background-clip: text; 
+    color: transparent;*/
+}
+
+.header-titulo{
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 60px;
+    color: var(--white);
+}
+
+
+/*HEADER BAIXO*/
+
+.header-baixo a{
+    position: relative;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.header-baixo a::after{
+    content:"";
+    position: absolute;
+    left: 0px;                      /* começa no canto esquerdo */
+    bottom: -2px;
+    width: 0px;
+    height: 2px;
+    transition: width 0.3s ease;
+    background: var(--white);
+}
+
+.header-baixo a:hover::after{
+    width:100%;
+}
+
+
+.header-baixo{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*ESTILIZAÇÃO DOS LINKS*/
+
+.header-nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+}
+
+.nav-text{
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 24px;
+}
+
+.icon{
+    font-size: 20px;
+}
+
+/*SECTION 1*/
+
+
+.section1{
+    width:100%;
+    height: 900px;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 24px;
+    color: var(--white);
+    box-sizing: border-box;
+    align-items: center;
+    margin-top: 150px;
+    text-align: justify;
+}
+
+.hello{
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 45px;
+    font-weight: 600;
+    color: var(--orange);
+}
+
+.meu-nome{
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--white);
+    
+}
+
+.meu-curso{
+    position: relative;
+    background-position: 0 0.6em; 
+    background: linear-gradient(to top, rgb(0, 52, 121) 0%, rgb(0, 52, 121) 50%, transparent 60%);
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.paragrafo{
+    margin-top: 50px;
+    padding-left: 20px;
+    border-left: 1px solid var(--white);
+    line-height: 40px;
+    font-size: 24px;
+}
+
+/*LINKS*/
+
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    width:100%;
+    height: 70px;
+    box-sizing: border-box;
+    display: flex;
+    gap: 50px;
+}
+
+.competencias{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.competencias a{
+    width: 300px;
+    height: 70px;
+    border: 1px solid var(--white);
+    border-radius: 5px;
+    color: var(--white);
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+}
+
+.competencias:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease;
+    box-shadow: 0 0 15px orange;
+}
+
+.contato{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contato a{
+    width: 300px;
+    height: 70px;
+    border: 1px solid var(--white);
+    border-radius: 5px;
+    color: var(--white);
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+}
+
+.contato:hover{
+    transform: scale(1.05);
+    transform: 0.3s ease;
+    box-shadow: 0 0 15px orange;
+}
+
+.estilo-texto{
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--orange);
+}
+
+/*SECTION 2*/
+
+.section2{
+    margin-top: 200px;
+    width:100%;
+    height: 600px;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 24px;
+    box-sizing: border-box;
+    display: flex;
+    gap: 140px;
+}
+
+.section2-esquerda{
+    width: 60%;
+    height: 100%;
+}
+
+.section2-competencias{
+    font-size: 45px;
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 600;
+    color: var(--orange);
+}
+
+.section2-paragrafo{
+    color: var(--white);
+    line-height: 40px;
+    border-left: solid 1px var(--white);
+    padding-left: 20px;
+    font-size: 24px;
+}
+
+.code{
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--orange);
+}
+
+
+/*CARDS SECTION2*/
+
+.card{
+    width: 420px;
+    height: 180px;
+    border: 1px solid var(--grey);
+    border-radius: 15px; 
+    display: flex;
+    transition: 0.2s ease;
+}
+
+.card:hover{
+    border: 1px solid var(--white);
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.image{
+    width: 28%;
+    padding-left: 15px;
+    padding-top: 15px;
+    box-sizing: border-box;
+}
+
+.card-text{
+    font-size: 18px;
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 300;
+    color: var(--white);
+    padding: 10px;
+    padding-top: 20px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    row-gap: 5px;
+}
+
+.card-text p{
+    margin: 0px;
+    margin-top: 5px;
+}
+
+.card-text-titulo{
+    font-size: 24px;
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.card-loop{
+    display: flex;
+    gap: 10px 10px;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items: center;
+}
+
+/*SECTION3*/
+
+.section3{
+    width:100%;
+    height: 900px;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 24px;
+    color: var(--white);
+    box-sizing: border-box;
+    align-items: center;
+    margin-top: 300px;
+    text-align: justify;
+}
+
+.email{
+    position: relative;
+    background-position: 0 0.6em; 
+    background: linear-gradient(to top, rgb(0, 52, 121) 0%, rgb(0, 52, 121) 50%, transparent 60%);
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.section3-botao{
+    width: 350px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: var(--white);
+    color: var(--orange);font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+
+}
+
+.section3-botao:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease;
+    box-shadow: 0 0 15px orange;
+}
+
+.section3-botao a{
+    text-decoration: none;
+    color: var(--background-color);
+}
+
+.centralizar-botao{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
